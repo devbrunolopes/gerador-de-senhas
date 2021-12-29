@@ -13,5 +13,5 @@ O app só funciona em modo Portrait.
 
 <div>
 <img src="https://user-images.githubusercontent.com/93380504/147649516-1bab6109-8bf3-449f-95aa-8d57e46c1e13.png" width="250px" />
-<img src="https://user-images.githubusercontent.com/93380504/147650782-65c492d6-20ca-460f-bd55-53dbef947a2c.png" width="250px" />
+<img src="https://user-images.githubusercontent.com/93380504/147652019-84ac4de9-551f-44ce-b0e8-f9996e0f2a5f.png" width="250px" />
 </div>
