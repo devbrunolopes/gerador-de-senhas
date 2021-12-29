@@ -15,7 +15,7 @@ class SenhaViewController: UIViewController {
     var letrasMinusculas: Bool!
     var caracteresEspeciais: Bool!
     var numeros: Bool!
-    var totalCaracteres: Int!
+    var totalCaracteres: Int = 10
     
     var passwordBrain: PasswordBrain!
     
@@ -33,6 +33,11 @@ class SenhaViewController: UIViewController {
     @IBAction func botaoGerarNovaSenhaPressionado(_ sender: UIButton) {
         let password = passwordBrain.generatePassword()
         senhaTextView.text = password
+    }
+    
+    
+    @IBAction func botaoCopiarPressionado(_ sender: UIButton) {
+        UIPasteboard.general.string = senhaTextView.text
     }
     
 

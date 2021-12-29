@@ -190,14 +190,37 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nwI-hM-4IH">
+                                <rect key="frame" x="125" y="498" width="164" height="35"/>
+                                <color key="backgroundColor" red="0.59607843140000005" green="0.14117647059999999" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="7eE-aY-Kdz"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Copiar Senha">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="botaoCopiarPressionado:" destination="bnd-UE-9sz" eventType="touchUpInside" id="p4b-4D-9Ve"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TGV-s0-nv4"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="nwI-hM-4IH" firstAttribute="top" secondItem="Nzg-8y-z58" secondAttribute="bottom" constant="10" id="K3q-cC-ugj"/>
                             <constraint firstItem="TGV-s0-nv4" firstAttribute="trailing" secondItem="jmY-sa-3qH" secondAttribute="trailing" constant="25" id="K72-wr-eCy"/>
                             <constraint firstItem="jmY-sa-3qH" firstAttribute="leading" secondItem="TGV-s0-nv4" secondAttribute="leading" constant="25" id="Mi0-Gt-oSk"/>
                             <constraint firstItem="TGV-s0-nv4" firstAttribute="bottom" secondItem="jmY-sa-3qH" secondAttribute="bottom" constant="70" id="XnI-Fx-k05"/>
+                            <constraint firstItem="TGV-s0-nv4" firstAttribute="trailing" secondItem="nwI-hM-4IH" secondAttribute="trailing" constant="125" id="hae-ye-SPF"/>
                             <constraint firstItem="Nzg-8y-z58" firstAttribute="centerX" secondItem="roe-4b-rSD" secondAttribute="centerX" id="nx9-A7-qlX"/>
+                            <constraint firstItem="nwI-hM-4IH" firstAttribute="leading" secondItem="TGV-s0-nv4" secondAttribute="leading" constant="125" id="uIM-L6-DSx"/>
                             <constraint firstItem="Nzg-8y-z58" firstAttribute="centerY" secondItem="roe-4b-rSD" secondAttribute="centerY" id="ukz-yD-nWg"/>
                         </constraints>
                     </view>
@@ -208,7 +231,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NPE-pH-Ujf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1931.8840579710147" y="134.59821428571428"/>
+            <point key="canvasLocation" x="1997" y="135"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="LXR-Xk-d0h">
@@ -218,6 +241,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="o2W-9j-anL">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.59607843140000005" green="0.14117647059999999" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
